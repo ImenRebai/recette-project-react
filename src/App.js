@@ -1,11 +1,16 @@
-
-
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Page from "./components/Page";
+import styles from "./App.module.scss";
 
 function App() {
   return (
-    <div className="App">
-      <h1>recette
-      </h1>
+    <div className={`d-flex flex-column ${styles.appContainer}`}>
+      <Header />
+      <Page />
+      <Footer />
+
+
     </div>
   );
 }
